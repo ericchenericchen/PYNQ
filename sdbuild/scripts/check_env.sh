@@ -4,6 +4,8 @@ if [ $(lsb_release -rs) == "18.04" ]; then
     rel_deps="libncurses5-dev lib32ncurses5"
 elif [ $(lsb_release -rs) == "20.04" ]; then
     rel_deps="libncurses6 lib32ncurses6"
+elif [ $(lsb_release -rs) == "22.04" ]; then
+    rel_deps="libncurses6 lib32ncurses6"
 else
     echo "Error: Please use Ubuntu 20.04 or Ubuntu 18.04."
     exit 1
